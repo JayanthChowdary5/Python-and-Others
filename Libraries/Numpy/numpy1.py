@@ -1,3 +1,4 @@
+# NUMPY NOTES
 import numpy as np
 import time
 import sys
@@ -19,12 +20,12 @@ print(arr.size*arr.itemsize)  # Storage required by numpy array - 4000
 
 # Shape of an array - rows and columns
 c = np.array([[1, 5, 7], [4, 8, 9]])
-print(c.shape)  # Prints out a tuple of rows and columns
+print(c.shape)  # Prints out a tuple of rows and columns (2, 3)
 
 # Reshape an array - (rows x columns) -> (columns x rows)
 d = np.array([[1, 2, 3, 4], [5, 6, 7, 8]])
 d_modified = d.reshape(4, 2)
-print(d_modified)
+print(d_modified)  #[[1, 2], [3, 4], [5, 6], [7, 8]]
 
 # Slicing
 print(d[0, 2])  # 0th row, 3rd element
@@ -44,6 +45,12 @@ print(np.std(f))  # Standard deviation
 # To concatenate two arrays we can use np.vstack() and np.hstack() and concatenate horizantally or vertically
 
 print(np.arange(1, 10, 2))  # arange(start, stop, steps) -> [1, 3, 5, 7, 9]
+# arange doesn't take upper limit (10) into consideration
 
+print(np.linspace(1, 10, 4))  #linspace(start, stop, N) -> [1, 4, 7, 10]
+# It roughly translates to 'Give me an array with N evenly spcaed numbers between 1 and 10(inclusive).
+
+g = np.arange(12)  #[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+gs = g.reshape(3, 4)  #[[0, 1, 2, 3], [4, 5, 6, 7], [8, 9, 10, 11]]
 
 
