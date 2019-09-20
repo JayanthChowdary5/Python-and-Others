@@ -53,4 +53,11 @@ print(np.linspace(1, 10, 4))  #linspace(start, stop, N) -> [1, 4, 7, 10]
 g = np.arange(12)  #[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 gs = g.reshape(3, 4)  #[[0, 1, 2, 3], [4, 5, 6, 7], [8, 9, 10, 11]]
 
+# Shuffle
+h =  np.arange(5)  # [0, 1, 2, 3, 4]
+np.random.shuffle(h)
+print(h)  # [1, 4, 3, 0, 2], If array is multi-dimensional, rows will be shuffled
+
+
+
 
