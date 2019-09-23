@@ -27,7 +27,7 @@ print(c.shape)  # Prints out a tuple of rows and columns (2, 3)
 # Reshape an array - (rows x columns) -> (columns x rows)
 d = np.array([[1, 2, 3, 4], [5, 6, 7, 8]])
 d_modified = d.reshape(4, 2)
-print(d_modified)  #[[1, 2], [3, 4], [5, 6], [7, 8]]
+print(d_modified)  # [[1, 2], [3, 4], [5, 6], [7, 8]]
 
 # Slicing
 print(d[0, 2])  # 0th row, 3rd element
@@ -49,17 +49,15 @@ print(np.std(f))  # Standard deviation
 print(np.arange(1, 10, 2))  # arange(start, stop, steps) -> [1, 3, 5, 7, 9]
 # arange doesn't take upper limit (10) into consideration
 
-print(np.linspace(1, 10, 4))  #linspace(start, stop, N) -> [1, 4, 7, 10]
+print(np.linspace(1, 10, 4))  # linspace(start, stop, N) -> [1, 4, 7, 10]
 # It roughly translates to 'Give me an array with N evenly spcaed numbers between 1 and 10(inclusive).
 
-g = np.arange(12)  #[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-gs = g.reshape(3, 4)  #[[0, 1, 2, 3], [4, 5, 6, 7], [8, 9, 10, 11]]
+g = np.arange(12)  # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+gs = g.reshape(3, 4)  # [[0, 1, 2, 3], [4, 5, 6, 7], [8, 9, 10, 11]]
 
 # Shuffle
-h =  np.arange(5)  # [0, 1, 2, 3, 4]
+h = np.arange(5)  # [0, 1, 2, 3, 4]
 np.random.shuffle(h)
 print(h)  # [1, 4, 3, 0, 2], If array is multi-dimensional, rows will be shuffled
-
-
 
 
