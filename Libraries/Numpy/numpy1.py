@@ -1,4 +1,6 @@
 # NUMPY NOTES
+# numpy arrays are closer to hardware. Thus, their execution/operation times are significantly lesser
+# compared to the usual pythonic lists.
 import numpy as np
 import time
 import sys
