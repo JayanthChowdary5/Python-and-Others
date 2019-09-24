@@ -1,0 +1,10 @@
+1. Open Command Promt and navigate to the folder where .py file is located
+2. Run 'pip install pyinstaller' 
+3. Once pyinstaller is installed, you can run 'pyinstaller --onefile -w file_name.py'
+4. Two folders will be created in the directory - dist and build
+5. EXE file will be in the dist folder.
+
+
+
+# We often want our python scripts to run on other machines, and when the machine doesn't have Python installed, it is recommended to
+# create a .exe file and share it to the recipient. This way, they can run the scripts without Python. 
